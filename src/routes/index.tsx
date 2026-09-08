@@ -2,20 +2,19 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import type { FormEvent } from "react";
 
 import heroImage from "@/assets/hero.jpg";
-import guestImage from "@/assets/guest.jpg";
 import { destinations, experiences, signatureItineraries, company } from "@/data/site";
 import { EnquirySection } from "@/components/site/EnquirySection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Acacia Trails — Kenya & East Africa Tours and Safaris" },
+      { title: "East Africa Adventures — Tours and Safaris" },
       {
         name: "description",
         content:
           "Licensed Kenyan tour operator: wildlife safaris, beach holidays, balloon flights, cultural and mountain trips across Kenya, Tanzania, Uganda and Rwanda. Prices in USD and KES.",
       },
-      { property: "og:title", content: "Acacia Trails — Kenya & East Africa Tours and Safaris" },
+      { property: "og:title", content: "East Africa Adventures — Tours and Safaris" },
       {
         property: "og:description",
         content:
@@ -45,7 +44,7 @@ function Home() {
           src={heroImage}
           alt="Dawn light over acacia savannah seen from a hot-air balloon basket"
           width={1920}
-          height={1080}
+          height={1088}
           className="w-full h-[78vh] min-h-[560px] object-cover"
         />
         <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-ink/85 via-ink/45 to-transparent" />
@@ -54,7 +53,7 @@ function Home() {
             <div className="flex flex-wrap items-end gap-x-10 gap-y-5">
               <div className="max-w-[46ch]">
                 <p className="text-accent font-medium text-xs sm:text-sm tracking-[0.18em] uppercase mb-3">
-                  Kenya &amp; East Africa · Est. 2009
+                  Kenya &amp; East Africa
                 </p>
                 <h1 className="font-display font-medium text-sand text-4xl sm:text-5xl lg:text-6xl leading-[1.02] tracking-tight text-balance">
                   Wander the savannah at first light
@@ -260,7 +259,7 @@ function Home() {
       {/* TRUST */}
       <section id="trust" className="bg-ink text-sand">
         <div className="mx-auto max-w-6xl px-5 sm:px-8 md:px-12 py-16 md:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-start">
             <div>
               <p className="text-accent font-medium text-xs sm:text-sm tracking-[0.18em] uppercase mb-3">
                 Why travellers trust us
@@ -272,7 +271,7 @@ function Home() {
                 Every driver-guide is a certified national guide; every camp we stay in is one we know by
                 name. Prices are quoted honestly in both currencies, with no hidden transfer fees.
               </p>
-              <div className="mt-8 grid grid-cols-3 gap-5">
+              <div className="mt-8 grid grid-cols-2 gap-5 max-w-md">
                 <div>
                   <p className="font-display font-medium text-2xl sm:text-3xl text-accent leading-none">
                     {company.licence}
@@ -285,34 +284,22 @@ function Home() {
                   </p>
                   <p className="mt-1.5 text-xs text-sand/60">Certified guides &amp; drivers</p>
                 </div>
-                <div>
-                  <p className="font-display font-medium text-2xl sm:text-3xl text-accent leading-none">
-                    4.9/5
-                  </p>
-                  <p className="mt-1.5 text-xs text-sand/60">From 2,300+ guest reviews</p>
-                </div>
               </div>
             </div>
-            <blockquote className="bg-clay/10 ring-1 ring-sand/15 rounded-2xl p-6 sm:p-8">
-              <p className="font-display font-medium text-xl sm:text-2xl leading-snug text-balance">
-                &ldquo;Our balloon flight over the Mara at sunrise was the closest thing to magic we have ever
-                seen. The team handled every detail, from visas to the last transfer.&rdquo;
-              </p>
-              <footer className="mt-5 flex items-center gap-3">
-                <img
-                  src={guestImage}
-                  alt="Amara O., safari guest"
-                  loading="lazy"
-                  width={512}
-                  height={512}
-                  className="size-11 shrink-0 rounded-full object-cover"
-                />
-                <div className="min-w-0">
-                  <p className="text-sm font-medium text-sand">Amara &amp; Jonas O.</p>
-                  <p className="text-xs text-sand/50">Mara Classic, 2024</p>
-                </div>
-              </footer>
-            </blockquote>
+            <dl className="border-y border-sand/15 divide-y divide-sand/15">
+              <div className="py-5">
+                <dt className="font-display font-medium text-xl text-accent">Local planning</dt>
+                <dd className="mt-1.5 text-sm text-sand/70">Routes shaped around seasons, real drive times and the camps our team knows first-hand.</dd>
+              </div>
+              <div className="py-5">
+                <dt className="font-display font-medium text-xl text-accent">Clear pricing</dt>
+                <dd className="mt-1.5 text-sm text-sand/70">Itemised quotes in USD and KES, with park fees, transfers and exclusions clearly marked.</dd>
+              </div>
+              <div className="py-5">
+                <dt className="font-display font-medium text-xl text-accent">Support as you travel</dt>
+                <dd className="mt-1.5 text-sm text-sand/70">A dedicated planner and on-ground team stay reachable throughout your journey.</dd>
+              </div>
+            </dl>
           </div>
         </div>
       </section>

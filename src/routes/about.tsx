@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import guestImage from "@/assets/guest.jpg";
 import { company } from "@/data/site";
 import { EnquirySection } from "@/components/site/EnquirySection";
 
@@ -33,7 +32,7 @@ const promises = [
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Why Travel With Us — Licensed Kenyan Tour Operator | Acacia Trails" },
+      { title: "Why Travel With Us | East Africa Adventures" },
       {
         name: "description",
         content:
@@ -61,11 +60,11 @@ function AboutPage() {
             Licensed in Kenya, guided by people who live here
           </h1>
           <p className="mt-4 text-sm sm:text-base text-sand/70 text-pretty max-w-[54ch]">
-            {company.name} has planned travel from {company.bases} since 2009 — for Nairobi families taking a
-            weekend in the bush, and for visitors crossing the world for one migration morning. Same
-            standards, same honest pricing.
+            {company.name} plans travel from {company.bases} — for Nairobi families taking a weekend in the
+            bush, and for visitors crossing the world for one migration morning. The same care and honest
+            pricing guide every journey.
           </p>
-          <div className="mt-10 grid grid-cols-3 gap-5 max-w-2xl">
+          <div className="mt-10 grid grid-cols-2 gap-5 max-w-md">
             <div>
               <p className="font-display font-medium text-2xl sm:text-3xl text-accent leading-none">
                 {company.licence}
@@ -75,10 +74,6 @@ function AboutPage() {
             <div>
               <p className="font-display font-medium text-2xl sm:text-3xl text-accent leading-none">120+</p>
               <p className="mt-1.5 text-xs text-sand/60">Certified guides &amp; drivers</p>
-            </div>
-            <div>
-              <p className="font-display font-medium text-2xl sm:text-3xl text-accent leading-none">4.9/5</p>
-              <p className="mt-1.5 text-xs text-sand/60">From 2,300+ guest reviews</p>
             </div>
           </div>
         </div>
@@ -97,31 +92,6 @@ function AboutPage() {
               </div>
             ))}
           </dl>
-        </div>
-      </section>
-
-      <section className="bg-clay/40 border-y border-ink/10">
-        <div className="mx-auto max-w-6xl px-5 sm:px-8 md:px-12 py-16 md:py-20">
-          <blockquote className="max-w-3xl">
-            <p className="font-display font-medium text-2xl sm:text-3xl leading-snug text-ink text-balance">
-              &ldquo;Our balloon flight over the Mara at sunrise was the closest thing to magic we have ever
-              seen. The team handled every detail, from visas to the last transfer.&rdquo;
-            </p>
-            <footer className="mt-6 flex items-center gap-3">
-              <img
-                src={guestImage}
-                alt="Amara O., safari guest"
-                loading="lazy"
-                width={512}
-                height={512}
-                className="size-12 shrink-0 rounded-full object-cover"
-              />
-              <div className="min-w-0">
-                <p className="text-sm font-medium text-ink">Amara &amp; Jonas O.</p>
-                <p className="text-xs text-mute">Mara Classic, 2024</p>
-              </div>
-            </footer>
-          </blockquote>
         </div>
       </section>
 

@@ -16,13 +16,13 @@ import itinCoast from "@/assets/itin-coast.jpg";
 import itinKili from "@/assets/itin-kili.jpg";
 
 export const company = {
-  name: "Acacia Trails",
+  name: "East Africa Adventures",
   licence: "KTLB 4128",
   bases: "Nairobi & Arusha",
   phoneDisplay: "+254 700 000 000",
   phoneHref: "tel:+254700000000",
   whatsappHref: "https://wa.me/254700000000",
-  email: "hello@acaciatrails.co.ke",
+  email: "hello@eastafricaadventures.co.ke",
 };
 
 export type Package = {

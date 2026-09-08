@@ -5,7 +5,9 @@ import { EnquirySection } from "@/components/site/EnquirySection";
 export const Route = createFileRoute("/destinations")({
   head: () => ({
     meta: [
-      { title: "East Africa Destinations — Kenya, Tanzania, Uganda, Rwanda | Acacia Trails" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { title: "East Africa Destinations — Kenya, Tanzania, Uganda, Rwanda | East Africa Adventures" },
       {
         name: "description",
         content:
