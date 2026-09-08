@@ -5,7 +5,9 @@ import { experienceBySlug } from "@/data/site";
 export const Route = createFileRoute("/culture")({
   head: () => ({
     meta: [
-      { title: "Cultural Experiences in Kenya & East Africa — Acacia Trails" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { title: "Cultural Experiences in Kenya & East Africa — East Africa Adventures" },
       {
         name: "description",
         content:

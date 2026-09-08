@@ -5,7 +5,9 @@ import { experienceBySlug } from "@/data/site";
 export const Route = createFileRoute("/balloon")({
   head: () => ({
     meta: [
-      { title: "Hot-Air Balloon Flights over the Mara & Serengeti — Acacia Trails" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { title: "Hot-Air Balloon Flights over the Mara & Serengeti — East Africa Adventures" },
       {
         name: "description",
         content:

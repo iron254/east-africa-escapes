@@ -5,7 +5,9 @@ import { experienceBySlug } from "@/data/site";
 export const Route = createFileRoute("/city")({
   head: () => ({
     meta: [
-      { title: "Nairobi, Mombasa & Kampala City Excursions — Acacia Trails" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { title: "Nairobi, Mombasa & Kampala City Excursions — East Africa Adventures" },
       {
         name: "description",
         content:

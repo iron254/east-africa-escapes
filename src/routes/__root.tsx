@@ -80,13 +80,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Acacia Trails — Kenya & East Africa Tours and Safaris" },
+      { title: "East Africa Adventures — Tours and Safaris" },
       {
         name: "description",
         content:
           "Licensed Kenyan tour operator planning safaris, beach holidays, balloon flights and tailored group travel across East Africa.",
       },
-      { name: "author", content: "Acacia Trails" },
+      { name: "author", content: "East Africa Adventures" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

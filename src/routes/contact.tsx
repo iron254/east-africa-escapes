@@ -5,13 +5,15 @@ import { EnquiryForm } from "@/components/site/EnquiryForm";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Enquire & Book — Acacia Trails Kenya & East Africa" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { title: "Enquire & Book — East Africa Adventures Kenya & East Africa" },
       {
         name: "description",
         content:
           "Send a trip enquiry or message us on WhatsApp. A planner in Nairobi replies within one business day, in English or Kiswahili.",
       },
-      { property: "og:title", content: "Enquire & Book — Acacia Trails" },
+      { property: "og:title", content: "Enquire & Book — East Africa Adventures" },
       {
         property: "og:description",
         content: "Tell us the dates and the mood; we come back with a costed itinerary in USD and KES.",

@@ -5,7 +5,9 @@ import { EnquirySection } from "@/components/site/EnquirySection";
 export const Route = createFileRoute("/experiences")({
   head: () => ({
     meta: [
-      { title: "Experiences — Safaris, Beaches, Balloons & More | Acacia Trails" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { title: "Experiences — Safaris, Beaches, Balloons & More | East Africa Adventures" },
       {
         name: "description",
         content:

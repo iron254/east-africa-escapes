@@ -5,7 +5,9 @@ import { experienceBySlug } from "@/data/site";
 export const Route = createFileRoute("/transport")({
   head: () => ({
     meta: [
-      { title: "Safari Vehicles, Transfers & Domestic Flights — Acacia Trails" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { title: "Safari Vehicles, Transfers & Domestic Flights — East Africa Adventures" },
       {
         name: "description",
         content:
