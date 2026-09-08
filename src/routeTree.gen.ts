@@ -10,33 +10,206 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AccommodationRouteImport } from './routes/accommodation'
+import { Route as AdventureRouteImport } from './routes/adventure'
+import { Route as BalloonRouteImport } from './routes/balloon'
+import { Route as BeachesRouteImport } from './routes/beaches'
+import { Route as CityRouteImport } from './routes/city'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CultureRouteImport } from './routes/culture'
+import { Route as DestinationsRouteImport } from './routes/destinations'
+import { Route as ExperiencesRouteImport } from './routes/experiences'
+import { Route as GroupsRouteImport } from './routes/groups'
+import { Route as SafarisRouteImport } from './routes/safaris'
+import { Route as TransportRouteImport } from './routes/transport'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AccommodationRoute = AccommodationRouteImport.update({
+  id: '/accommodation',
+  path: '/accommodation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdventureRoute = AdventureRouteImport.update({
+  id: '/adventure',
+  path: '/adventure',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BalloonRoute = BalloonRouteImport.update({
+  id: '/balloon',
+  path: '/balloon',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BeachesRoute = BeachesRouteImport.update({
+  id: '/beaches',
+  path: '/beaches',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CityRoute = CityRouteImport.update({
+  id: '/city',
+  path: '/city',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CultureRoute = CultureRouteImport.update({
+  id: '/culture',
+  path: '/culture',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DestinationsRoute = DestinationsRouteImport.update({
+  id: '/destinations',
+  path: '/destinations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExperiencesRoute = ExperiencesRouteImport.update({
+  id: '/experiences',
+  path: '/experiences',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GroupsRoute = GroupsRouteImport.update({
+  id: '/groups',
+  path: '/groups',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SafarisRoute = SafarisRouteImport.update({
+  id: '/safaris',
+  path: '/safaris',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TransportRoute = TransportRouteImport.update({
+  id: '/transport',
+  path: '/transport',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/accommodation': typeof AccommodationRoute
+  '/adventure': typeof AdventureRoute
+  '/balloon': typeof BalloonRoute
+  '/beaches': typeof BeachesRoute
+  '/city': typeof CityRoute
+  '/contact': typeof ContactRoute
+  '/culture': typeof CultureRoute
+  '/destinations': typeof DestinationsRoute
+  '/experiences': typeof ExperiencesRoute
+  '/groups': typeof GroupsRoute
+  '/safaris': typeof SafarisRoute
+  '/transport': typeof TransportRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/accommodation': typeof AccommodationRoute
+  '/adventure': typeof AdventureRoute
+  '/balloon': typeof BalloonRoute
+  '/beaches': typeof BeachesRoute
+  '/city': typeof CityRoute
+  '/contact': typeof ContactRoute
+  '/culture': typeof CultureRoute
+  '/destinations': typeof DestinationsRoute
+  '/experiences': typeof ExperiencesRoute
+  '/groups': typeof GroupsRoute
+  '/safaris': typeof SafarisRoute
+  '/transport': typeof TransportRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/accommodation': typeof AccommodationRoute
+  '/adventure': typeof AdventureRoute
+  '/balloon': typeof BalloonRoute
+  '/beaches': typeof BeachesRoute
+  '/city': typeof CityRoute
+  '/contact': typeof ContactRoute
+  '/culture': typeof CultureRoute
+  '/destinations': typeof DestinationsRoute
+  '/experiences': typeof ExperiencesRoute
+  '/groups': typeof GroupsRoute
+  '/safaris': typeof SafarisRoute
+  '/transport': typeof TransportRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/accommodation'
+    | '/adventure'
+    | '/balloon'
+    | '/beaches'
+    | '/city'
+    | '/contact'
+    | '/culture'
+    | '/destinations'
+    | '/experiences'
+    | '/groups'
+    | '/safaris'
+    | '/transport'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/accommodation'
+    | '/adventure'
+    | '/balloon'
+    | '/beaches'
+    | '/city'
+    | '/contact'
+    | '/culture'
+    | '/destinations'
+    | '/experiences'
+    | '/groups'
+    | '/safaris'
+    | '/transport'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/accommodation'
+    | '/adventure'
+    | '/balloon'
+    | '/beaches'
+    | '/city'
+    | '/contact'
+    | '/culture'
+    | '/destinations'
+    | '/experiences'
+    | '/groups'
+    | '/safaris'
+    | '/transport'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AccommodationRoute: typeof AccommodationRoute
+  AdventureRoute: typeof AdventureRoute
+  BalloonRoute: typeof BalloonRoute
+  BeachesRoute: typeof BeachesRoute
+  CityRoute: typeof CityRoute
+  ContactRoute: typeof ContactRoute
+  CultureRoute: typeof CultureRoute
+  DestinationsRoute: typeof DestinationsRoute
+  ExperiencesRoute: typeof ExperiencesRoute
+  GroupsRoute: typeof GroupsRoute
+  SafarisRoute: typeof SafarisRoute
+  TransportRoute: typeof TransportRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +221,115 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/accommodation': {
+      id: '/accommodation'
+      path: '/accommodation'
+      fullPath: '/accommodation'
+      preLoaderRoute: typeof AccommodationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/adventure': {
+      id: '/adventure'
+      path: '/adventure'
+      fullPath: '/adventure'
+      preLoaderRoute: typeof AdventureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/balloon': {
+      id: '/balloon'
+      path: '/balloon'
+      fullPath: '/balloon'
+      preLoaderRoute: typeof BalloonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/beaches': {
+      id: '/beaches'
+      path: '/beaches'
+      fullPath: '/beaches'
+      preLoaderRoute: typeof BeachesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/city': {
+      id: '/city'
+      path: '/city'
+      fullPath: '/city'
+      preLoaderRoute: typeof CityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/culture': {
+      id: '/culture'
+      path: '/culture'
+      fullPath: '/culture'
+      preLoaderRoute: typeof CultureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations': {
+      id: '/destinations'
+      path: '/destinations'
+      fullPath: '/destinations'
+      preLoaderRoute: typeof DestinationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/experiences': {
+      id: '/experiences'
+      path: '/experiences'
+      fullPath: '/experiences'
+      preLoaderRoute: typeof ExperiencesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/groups': {
+      id: '/groups'
+      path: '/groups'
+      fullPath: '/groups'
+      preLoaderRoute: typeof GroupsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/safaris': {
+      id: '/safaris'
+      path: '/safaris'
+      fullPath: '/safaris'
+      preLoaderRoute: typeof SafarisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transport': {
+      id: '/transport'
+      path: '/transport'
+      fullPath: '/transport'
+      preLoaderRoute: typeof TransportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AccommodationRoute: AccommodationRoute,
+  AdventureRoute: AdventureRoute,
+  BalloonRoute: BalloonRoute,
+  BeachesRoute: BeachesRoute,
+  CityRoute: CityRoute,
+  ContactRoute: ContactRoute,
+  CultureRoute: CultureRoute,
+  DestinationsRoute: DestinationsRoute,
+  ExperiencesRoute: ExperiencesRoute,
+  GroupsRoute: GroupsRoute,
+  SafarisRoute: SafarisRoute,
+  TransportRoute: TransportRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
