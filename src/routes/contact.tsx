@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { company } from "@/data/site";
-import { EnquiryForm } from "@/components/site/EnquiryForm";
+import { BookingForm } from "@/components/site/BookingForm";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Enquire & Book — East Africa Adventures" },
       {
         property: "og:description",
-        content: "Tell us the dates and the mood; we come back with a costed itinerary in USD and KES.",
+        content: "Tell us the dates and the mood; we come back with a tailored itinerary and quote.",
       },
     ],
   }),
@@ -30,14 +30,14 @@ function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           <div>
             <p className="text-clay font-medium text-xs sm:text-sm tracking-[0.18em] uppercase mb-3">
-              Plan your trip
+              Request a booking
             </p>
             <h1 className="font-display font-medium text-4xl sm:text-5xl leading-[1.04] tracking-tight text-sand text-balance max-w-[22ch]">
               Tell us where you want to go
             </h1>
             <p className="mt-4 text-sm sm:text-base text-clay/80 text-pretty max-w-[46ch]">
-              Share your dates, group size and the kind of days you want. A dedicated planner replies within
-              one business day with a costed itinerary in USD and KES — no obligation, no pressure.
+              Share your dates, group size, pickup point and room preference. You will see a summary before
+              you send, and a dedicated planner replies within one business day — no obligation.
             </p>
 
             <dl className="mt-10 grid gap-5 text-sand">
@@ -72,7 +72,7 @@ function ContactPage() {
             </dl>
           </div>
 
-          <EnquiryForm />
+          <BookingForm />
         </div>
       </div>
     </main>

@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Licensed Kenyan tour operator: wildlife safaris, beach holidays, balloon flights, cultural and mountain trips across Kenya, Tanzania, Uganda and Rwanda. Prices in USD and KES.",
+          "Licensed Kenyan tour operator: wildlife safaris, beach holidays, balloon flights, cultural and mountain trips across Kenya, Tanzania, Uganda and Rwanda. Send a booking request in three steps.",
       },
       { property: "og:title", content: "East Africa Adventures — Tours and Safaris" },
       {
@@ -206,7 +206,7 @@ function Home() {
               Signature itineraries
             </p>
             <h2 className="font-display font-medium text-3xl sm:text-4xl leading-tight tracking-tight text-ink text-balance">
-              Built in-house, priced in USD &amp; KES
+              Built in-house, tailored to your dates
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -234,14 +234,8 @@ function Home() {
                     {itinerary.name}
                   </h3>
                   <p className="mt-1.5 text-sm text-ink/70 text-pretty flex-1">{itinerary.body}</p>
-                  <div className="mt-4 flex items-end justify-between pt-4 border-t border-ink/10">
-                    <div>
-                      <p className="text-xs text-mute">from</p>
-                      <p className="font-display font-medium text-2xl text-ink leading-none">
-                        {itinerary.usd}
-                      </p>
-                      <p className="text-xs text-mute mt-1">{itinerary.kes}</p>
-                    </div>
+                  <div className="mt-4 flex items-center justify-between pt-4 border-t border-ink/10">
+                    <p className="text-xs text-mute">Quote on request</p>
                     <Link
                       to={itinerary.path}
                       className="text-sm font-medium text-brand hover:text-ink transition-colors"
@@ -269,7 +263,7 @@ function Home() {
               </h2>
               <p className="mt-4 text-sm sm:text-base text-sand/70 text-pretty max-w-[46ch]">
                 Every driver-guide is a certified national guide; every camp we stay in is one we know by
-                name. Prices are quoted honestly in both currencies, with no hidden transfer fees.
+                name. Every quote is written, itemised and free of hidden transfer fees.
               </p>
               <div className="mt-8 grid grid-cols-2 gap-5 max-w-md">
                 <div>
@@ -293,7 +287,7 @@ function Home() {
               </div>
               <div className="py-5">
                 <dt className="font-display font-medium text-xl text-accent">Clear pricing</dt>
-                <dd className="mt-1.5 text-sm text-sand/70">Itemised quotes in USD and KES, with park fees, transfers and exclusions clearly marked.</dd>
+                <dd className="mt-1.5 text-sm text-sand/70">Itemised written quotes, with park fees, transfers and exclusions clearly marked.</dd>
               </div>
               <div className="py-5">
                 <dt className="font-display font-medium text-xl text-accent">Support as you travel</dt>

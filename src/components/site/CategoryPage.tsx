@@ -53,10 +53,10 @@ export function CategoryPage({ experience }: { experience: Experience }) {
         <div className="mx-auto max-w-6xl px-5 sm:px-8 md:px-12 py-16 md:py-20">
           <div className="mb-9">
             <p className="text-brand font-medium text-xs sm:text-sm tracking-[0.18em] uppercase mb-3">
-              What it costs
+              Ways to travel it
             </p>
             <h2 className="font-display font-medium text-3xl sm:text-4xl leading-tight tracking-tight text-ink text-balance">
-              Priced in USD &amp; KES
+              Choose a shape, we quote it for you
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -73,14 +73,10 @@ export function CategoryPage({ experience }: { experience: Experience }) {
                 </div>
                 <h3 className="mt-2 font-display font-medium text-xl text-ink text-balance">{pack.name}</h3>
                 <p className="mt-1.5 text-sm text-ink/70 text-pretty flex-1">{pack.summary}</p>
-                <div className="mt-4 flex items-end justify-between pt-4 border-t border-ink/10">
-                  <div>
-                    <p className="text-xs text-mute">from</p>
-                    <p className="font-display font-medium text-2xl text-ink leading-none">{pack.usd}</p>
-                    <p className="text-xs text-mute mt-1">{pack.kes}</p>
-                  </div>
+                <div className="mt-4 flex items-center justify-between pt-4 border-t border-ink/10">
+                  <p className="text-xs text-mute">Quote on request</p>
                   <Link to="/contact" className="text-sm font-medium text-brand hover:text-ink transition-colors">
-                    Enquire &rarr;
+                    Request booking &rarr;
                   </Link>
                 </div>
               </article>
