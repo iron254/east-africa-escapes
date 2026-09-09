@@ -21,7 +21,7 @@ const promises = [
   },
   {
     title: "Payment that suits you",
-    body: "Pay by M-Pesa, bank transfer or card, with a written schedule and a clear cancellation policy.",
+    body: "Pay by M-Pesa, bank transfer or card, in KES or USD, with a written schedule and a clear cancellation policy.",
   },
   {
     title: "Someone awake when you travel",

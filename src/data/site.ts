@@ -45,24 +45,6 @@ export type Experience = {
   packages: Package[];
 };
 
-export const pickupOptions = [
-  "Jomo Kenyatta International Airport (JKIA)",
-  "Wilson Airport, Nairobi",
-  "Nairobi hotel or home address",
-  "Moi International Airport, Mombasa",
-  "Kilimanjaro International Airport",
-  "I will arrange my own arrival",
-];
-
-export const roomOptions = [
-  "Double / twin room sharing",
-  "Single room (private)",
-  "Family room or adjoining rooms",
-  "Tented camp, en-suite",
-  "Exclusive-use house or villa",
-  "No preference — advise me",
-];
-
 export const experiences: Experience[] = [
   {
     slug: "safaris",

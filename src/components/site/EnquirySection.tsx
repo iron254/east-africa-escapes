@@ -1,5 +1,5 @@
 import { company } from "@/data/site";
-import { BookingForm } from "./BookingForm";
+import { EnquiryForm } from "./EnquiryForm";
 
 export function EnquirySection({ defaultInterest }: { defaultInterest?: string | undefined }) {
   return (
@@ -8,14 +8,14 @@ export function EnquirySection({ defaultInterest }: { defaultInterest?: string |
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           <div>
             <p className="text-clay font-medium text-xs sm:text-sm tracking-[0.18em] uppercase mb-3">
-              Request a booking
+              Plan your trip
             </p>
             <h2 className="font-display font-medium text-3xl sm:text-4xl leading-tight tracking-tight text-sand text-balance">
-              Tell us your dates and we build the rest
+              Tell us where you want to go
             </h2>
             <p className="mt-4 text-sm sm:text-base text-clay/80 text-pretty max-w-[44ch]">
-              Three quick steps — your details, your dates and options, then a summary to check before you
-              send. A dedicated planner replies within one business day, in English or Kiswahili.
+              A dedicated planner replies within one business day — in English or Kiswahili. Prefer to talk
+              now? Message us on the line below.
             </p>
             <a
               href={company.whatsappHref}
@@ -27,7 +27,7 @@ export function EnquirySection({ defaultInterest }: { defaultInterest?: string |
               WhatsApp {company.phoneDisplay}
             </a>
           </div>
-          <BookingForm defaultInterest={defaultInterest} />
+          <EnquiryForm defaultInterest={defaultInterest} />
         </div>
       </div>
     </section>

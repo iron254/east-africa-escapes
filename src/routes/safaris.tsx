@@ -11,7 +11,7 @@ export const Route = createFileRoute("/safaris")({
       {
         name: "description",
         content:
-          "Small-group wildlife safaris in the Maasai Mara, Amboseli, Serengeti and Ngorongoro with certified driver-guides.",
+          "Small-group wildlife safaris in the Maasai Mara, Amboseli, Serengeti and Ngorongoro with certified driver-guides. From $720 / KES 93,000.",
       },
       { property: "og:title", content: "Wildlife Safaris in Kenya & Tanzania — East Africa Adventures" },
       {
