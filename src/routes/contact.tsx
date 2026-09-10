@@ -16,7 +16,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Enquire & Book — East Africa Adventures" },
       {
         property: "og:description",
-        content: "Tell us the dates and the mood; we come back with a costed itinerary in USD and KES.",
+        content: "Tell us the dates, group size and pickup; we come back with a full itinerary and quote.",
       },
     ],
   }),
@@ -37,7 +37,7 @@ function ContactPage() {
             </h1>
             <p className="mt-4 text-sm sm:text-base text-clay/80 text-pretty max-w-[46ch]">
               Share your dates, group size and the kind of days you want. A dedicated planner replies within
-              one business day with a costed itinerary in USD and KES — no obligation, no pressure.
+              one business day with a full itinerary and quote — no obligation, no pressure.
             </p>
 
             <dl className="mt-10 grid gap-5 text-sand">

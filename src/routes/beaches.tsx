@@ -11,7 +11,7 @@ export const Route = createFileRoute("/beaches")({
       {
         name: "description",
         content:
-          "Kenyan coast and Zanzibar beach holidays with reef days, dhow sails and resident rates. Bush-and-beach combinations from $1,640 / KES 212,000.",
+          "Kenyan coast and Zanzibar beach holidays with reef days, dhow sails and resident rates. Bush-and-beach combinations quoted to your dates.",
       },
       { property: "og:title", content: "Beach Holidays in Diani, Watamu & Zanzibar — East Africa Adventures" },
       {
