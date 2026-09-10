@@ -3,13 +3,13 @@ import { z } from "zod";
 import { company, experiences } from "@/data/site";
 
 const pickupOptions = [
-  "JKIA — Nairobi international airport",
-  "Wilson Airport — Nairobi",
-  "Nairobi hotel or home address",
-  "Moi International Airport — Mombasa",
-  "Diani or south-coast hotel",
-  "Kilimanjaro International Airport",
-  "I will arrange my own arrival",
+  "Nairobi — JKIA airport",
+  "Nairobi — Wilson Airport",
+  "Nairobi — hotel or home",
+  "Mombasa — Moi airport",
+  "Diani or south coast hotel",
+  "Kilimanjaro airport",
+  "I will arrive on my own",
 ];
 
 const roomOptions = [
@@ -38,7 +38,7 @@ const bookingSchema = z.object({
 type Booking = z.infer<typeof bookingSchema>;
 
 const fieldClass =
-  "bg-clay/50 rounded-md px-3 py-2.5 text-sm text-ink placeholder:text-mute focus:outline-none focus:ring-2 focus:ring-brand/50";
+  "w-full min-w-0 bg-clay/50 rounded-md px-3 py-2.5 text-sm text-ink placeholder:text-mute focus:outline-none focus:ring-2 focus:ring-brand/50";
 
 function formatDate(value: string) {
   const parsed = new Date(value);
